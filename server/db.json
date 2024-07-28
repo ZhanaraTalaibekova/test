@@ -65,5 +65,19 @@
       "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
       "id": 5
     }
+  ],
+  "users": [
+    {
+      "email": "qwerty@gmail.com",
+      "password": "$2a$10$TlY0PHknRJSCDmWu1Pvl/uUm3U.UJNEvXeBkLYwv/NhtTQNw76v0i",
+      "userName": "qwerty",
+      "id": 1
+    },
+    {
+      "email": "user2@gmail.com",
+      "password": "$2a$10$TU9N5qgTdO.MylhACqikH.zgToGqQDa6R06bSHevB5i3NYUhcmi3i",
+      "userName": "qwerty",
+      "id": 2
+    }
   ]
 }
