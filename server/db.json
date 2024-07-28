@@ -27,6 +27,7 @@
       "id": 2
     }
   ],
+<<<<<<< HEAD
   "employeesPositions": {
     "technologists": [
       {
@@ -58,4 +59,20 @@
     ],
     "cutters": []
   }
+=======
+  "users": [
+    {
+      "email": "qwerty@gmail.com",
+      "password": "$2a$10$TlY0PHknRJSCDmWu1Pvl/uUm3U.UJNEvXeBkLYwv/NhtTQNw76v0i",
+      "userName": "qwerty",
+      "id": 1
+    },
+    {
+      "email": "user2@gmail.com",
+      "password": "$2a$10$TU9N5qgTdO.MylhACqikH.zgToGqQDa6R06bSHevB5i3NYUhcmi3i",
+      "userName": "qwerty",
+      "id": 2
+    }
+  ]
+>>>>>>> f391fb6e7fe367d8676a16b3ea7672dc6682f8cd
 }
