@@ -5,3 +5,4 @@ export * from './Header';
 export * from './Result';
 export * from './NewEmployee';
 export * from './CustomPaper';
+export * from './CustomBreadcrumbs';

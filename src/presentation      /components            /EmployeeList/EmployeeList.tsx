@@ -14,8 +14,6 @@ export const EmployeeList: React.FC = () => {
     dispatch(getEmployeesPositions());
   }, [dispatch]);
 
-  console.log(employeesPositions, 'employeesPositions')
-
   useEffect(() => {
     if (status === "succeeded") {
       console.log("Employees loaded successfully:", employeesPositions);
@@ -27,14 +25,24 @@ export const EmployeeList: React.FC = () => {
 
   const technologists = useMemo(() => {
     if (employeesPositions.length > 0) {
-      console.log("Technologists:", employeesPositions[0].technologists);
-      return employeesPositions[0].technologists || [];
+      return employeesPositions.flatMap(position => position.technologists || []);
     }
     return [];
   }, [employeesPositions]);
 
-  const dressmakers = useMemo(() => (employeesPositions.length > 0 ? employeesPositions[0].dressmakers || [] : []), [employeesPositions]);
-  const cutters = useMemo(() => (employeesPositions.length > 0 ? employeesPositions[0].cutters || [] : []), [employeesPositions]);
+  const dressmakers = useMemo(() => {
+    if (employeesPositions.length > 0) {
+      return employeesPositions.flatMap(position => position.dressmakers || []);
+    }
+    return [];
+  }, [employeesPositions]);
+
+  const cutters = useMemo(() => {
+    if (employeesPositions.length > 0) {
+      return employeesPositions.flatMap(position => position.cutters || []);
+    }
+    return [];
+  }, [employeesPositions]);
 
   console.log(technologists, 'technologists');
 

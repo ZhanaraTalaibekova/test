@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "Home",
+    "addEmployee": "Add Employee",
+    "register": "Register",
+    "logout": "Log Out"
+  },
+  "newEmployee": {
+    "title": "New Employee",
+    "firstName": "First Name",
+    "firstNameRequired": "First Name is required",
+    "lastName": "Last Name",
+    "lastNameRequired": "Last Name is required",
+    "phoneNumber": "Phone Number",
+    "phoneNumberRequired": "Phone Number is required",
+    "positions": "Position",
+    "dressmaker": "Dressmaker",
+    "cutter": "Cutter",
+    "technologist": "Technologist",
+    "team": "Team Up",
+    "yes": "Yes",
+    "no": "No",
+    "imageURL": "Image URL",
+    "submit": "Submit"
+  },
+  "homePage": {
+    "position": "Position",
+    "phone": "Phone",
+    "inTeam": "In Team",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "employee": {
+    "createdSuccess": "Employee created successfully!",
+    "createError": "An error occurred while creating the employee",
+    "deletedSuccess": "Employee deleted successfully!",
+    "deleteError": "Failed to delete employee"
+  },
+  "auth": {
+    "registerSuccess": "You have successfully registered!",
+    "registerError": "An error occurred during registration",
+    "loginSuccess": "You have successfully logged in",
+    "loginError": "An error occurred during login"
+  },
+  "register": {
+    "title": "Register",
+    "userNameLabel": "UserName",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "submitButton": "Register",
+    "loginButton": "Login",
+    "requiredField": "This field is required"
+  },
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "submitButton": "Login",
+    "backButton": "Back",
+    "requiredField": "This field is required"
+  },
+  "breadcrumb": {
+    "label": "Breadcrumb",
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "addEmployee": "Add Employee"
+  }
+}

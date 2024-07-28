@@ -11,7 +11,7 @@ interface IResultProps {
 export const Result: FC<IResultProps> = ({ title, subTitle }) => {
   return (
     <div className="container">
-      <CustomPaper style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: '12%' }}>
+      <CustomPaper style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: '14%' }}>
         <CheckCircleOutline style={{ fontSize: '48px', color: 'green' }} />
         <CardContent>
           <Typography variant="h5" component="h2">

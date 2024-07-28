@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "addEmployee": "Добавить сотрудника",
+    "register": "Регистрация",
+    "logout": "Выйти"
+  },
+  "newEmployee": {
+    "title": "Новый сотрудник",
+    "firstName": "Имя",
+    "firstNameRequired": "Имя обязательно",
+    "lastName": "Фамилия",
+    "lastNameRequired": "Фамилия обязательна",
+    "phoneNumber": "Номер телефона",
+    "phoneNumberRequired": "Номер обязателен",
+    "positions": "Должность",
+    "dressmaker": "Швея",
+    "cutter": "Раскройщик",
+    "technologist": "Технолог",
+    "team": "Объединить в бригаду",
+    "yes": "Да",
+    "no": "Нет",
+    "imageURL": "URL изображения",
+    "submit": "Отправить"
+  },
+  "homePage": {
+    "position": "Должность",
+    "phone": "Телефон",
+    "inTeam": "В команде",
+    "yes": "Да",
+    "no": "Нет"
+  },
+  "employee": {
+    "createdSuccess": "Сотрудник успешно создан!",
+    "createError": "Произошла ошибка при создании сотрудника",
+    "deletedSuccess": "Сотрудник успешно удалён!",
+    "deleteError": "Не удалось удалить сотрудника"
+  },
+  "auth": {
+    "registerSuccess": "Вы успешно зарегистрировались!",
+    "registerError": "Произошла ошибка при регистрации",
+    "loginSuccess": "Вы успешно авторизовались",
+    "loginError": "Произошла ошибка при авторизации"
+  },
+  "register": {
+    "title": "Регистрация",
+    "userNameLabel": "Имя пользователя",
+    "emailLabel": "Электронная почта",
+    "passwordLabel": "Пароль",
+    "submitButton": "Зарегистрироваться",
+    "loginButton": "Логин",
+    "requiredField": "Это обязательное поле"
+  },
+  "login": {
+    "title": "Логин",
+    "emailLabel": "Электронная почта",
+    "passwordLabel": "Пароль",
+    "submitButton": "Войти",
+    "backButton": "Назад",
+    "requiredField": "Это обязательное поле"
+  },
+  "breadcrumb": {
+    "label": "Хлебные крошки",
+    "home": "Главная",
+    "login": "Логин",
+    "register": "Регистрация",
+    "addEmployee": "Добавить сотрудника"
+  }
+}

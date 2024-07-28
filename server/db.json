@@ -14,40 +14,78 @@
       "id": 1
     },
     {
-      "firstName": "fsrf",
-      "lastName": "grtg",
-      "phoneNumber": "grtg",
+      "firstName": "tgt",
+      "lastName": "gtg",
+      "phoneNumber": "54454545",
       "positions": {
-        "dressmaker": true,
+        "dressmaker": false,
         "cutter": false,
+        "technologist": true
+      },
+      "team": "true",
+      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
+      "id": 3
+    },
+    {
+      "firstName": "b",
+      "lastName": "b",
+      "phoneNumber": "545",
+      "positions": {
+        "dressmaker": false,
+        "cutter": true,
         "technologist": false
       },
       "team": "true",
-      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 2
+      "userImage": "https://i.pinimg.com/564x/08/ee/71/08ee7156e3260bcf04b93ed8e3687288.jpg",
+      "id": 6
+    },
+    {
+      "firstName": "v",
+      "lastName": "v",
+      "phoneNumber": "3",
+      "positions": {
+        "dressmaker": false,
+        "cutter": false,
+        "technologist": true
+      },
+      "team": "true",
+      "userImage": "https://i.pinimg.com/564x/bb/2f/65/bb2f658691cc2d0e7728c733c3066408.jpg",
+      "id": 7
+    },
+    {
+      "firstName": "сс",
+      "lastName": "сс",
+      "phoneNumber": "сс",
+      "positions": {
+        "dressmaker": false,
+        "cutter": true,
+        "technologist": false
+      },
+      "team": "false",
+      "userImage": "https://i.pinimg.com/564x/e0/b7/87/e0b78721a0aae8a186010d5909b73bbd.jpg",
+      "id": 8
     }
   ],
-<<<<<<< HEAD
   "employeesPositions": {
     "technologists": [
       {
-        "firstName": "fdf",
-        "lastName": "dfdf",
-        "phoneNumber": "334",
+        "firstName": "v",
+        "lastName": "v",
+        "phoneNumber": "3",
         "positions": {
           "dressmaker": false,
           "cutter": false,
           "technologist": true
         },
-        "team": false,
-        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+        "team": "true",
+        "userImage": "https://i.pinimg.com/564x/bb/2f/65/bb2f658691cc2d0e7728c733c3066408.jpg"
       }
     ],
     "dressmakers": [
       {
-        "firstName": "fsrf",
-        "lastName": "grtg",
-        "phoneNumber": "grtg",
+        "firstName": "f",
+        "lastName": "f",
+        "phoneNumber": "f",
         "positions": {
           "dressmaker": true,
           "cutter": false,
@@ -57,9 +95,21 @@
         "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
       }
     ],
-    "cutters": []
-  }
-=======
+    "cutters": [
+      {
+        "firstName": "u",
+        "lastName": "u",
+        "phoneNumber": "u",
+        "positions": {
+          "dressmaker": false,
+          "cutter": true,
+          "technologist": false
+        },
+        "team": false,
+        "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg"
+      }
+    ]
+  },
   "users": [
     {
       "email": "qwerty@gmail.com",
@@ -72,7 +122,66 @@
       "password": "$2a$10$TU9N5qgTdO.MylhACqikH.zgToGqQDa6R06bSHevB5i3NYUhcmi3i",
       "userName": "qwerty",
       "id": 2
+    },
+    {
+      "email": "r@gmail.com",
+      "password": "$2a$10$ollRPrNbzSIyVKwC.G4Ab.fLCU0kYNpq7aqH0RWHZS1TuBnbMOPa2",
+      "userName": "r",
+      "id": 3
+    },
+    {
+      "email": "m@gmail.com",
+      "password": "$2a$10$DdyyjRNouQytBESEPUTa0Ok6EANtup7WjF5B1TN7hJwLTxB29Lhnm",
+      "userName": "m",
+      "id": 4
+    },
+    {
+      "email": "t@gmail.com",
+      "password": "$2a$10$0vRZbmxzsYpMQL37EG3Wz.HEFv.Euyh2b0YlyESlJE5jtxnXxsCdG",
+      "userName": "t",
+      "id": 5
+    },
+    {
+      "email": "dd2@gmail.com",
+      "password": "$2a$10$gUcHdgE1kECwY3Rui48XKuUAqZRXhWPOkzi1s80cZzK2r.p0K166m",
+      "userName": "fv",
+      "id": 6
+    },
+    {
+      "email": "zjdckls@gmail.com",
+      "password": "$2a$10$kse3QeS5x7sWLVAs7b7YoO0ZGlKkGkoiSjR1uKNqAB.T3OIERdAFK",
+      "userName": "ff",
+      "id": 7
+    },
+    {
+      "email": "zhanara@gmail.com",
+      "password": "$2a$10$.QE3dw2g/NUq/DBXYiTus.CMXdiYGmyCnB7zGyFtVTKiD5op3nkJa",
+      "userName": "34343",
+      "id": 8
+    },
+    {
+      "email": "dd45542@gmail.com",
+      "password": "$2a$10$llsDS9P.PmjStazFHpwwZuagEppX6A5OuWJoKquCHndg0mYfK8fFi",
+      "userName": "rbtbr",
+      "id": 9
+    },
+    {
+      "email": "vlmsdlkfcv@cm.com",
+      "password": "$2a$10$W0CyrNO.J/HJ56x98BX1LuJpCfOCFvFhQbFlW21rZX7fJiE6BjJ4e",
+      "userName": "ed23e2",
+      "id": 10
+    },
+    {
+      "email": "dvzm@d.com",
+      "password": "$2a$10$UxoR.OA9RbdROuknLZHleu6ncI5UtpXtD.5FgvfQV/h7zY86jO./.",
+      "userName": "rrfr",
+      "id": 11
+    },
+    {
+      "email": "dchbj@gmail.com",
+      "password": "$2a$10$4NJnQ0n9K/3SelPiXxbXzeOc4J6.gam83SooUD9pJplRSRqgwrif2",
+      "userName": "dffddf",
+      "id": 12
     }
   ]
->>>>>>> f391fb6e7fe367d8676a16b3ea7672dc6682f8cd
 }

@@ -1,29 +1,37 @@
 import { Button, Grid, TextField, Typography } from '@mui/material';
-import { Controller, SubmitHandler, useForm } from 'react-hook-form';
-import { CustomPaper } from '../../components            ';
+import { Controller, useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { AppDispatch, registerUser } from '../../../redux';
 import { useNavigate } from 'react-router';
 import { Routes } from '../../enums/router';
 import { Link } from 'react-router-dom';
 import { Users } from '../../../data';
+import { useTranslation } from 'react-i18next';
+import { CustomBreadcrumbs, CustomPaper } from '../../components            ';
+import { unwrapResult } from '@reduxjs/toolkit';
 
 export const Register = () => {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { control, handleSubmit, reset } = useForm<Users>();
 
-  const onSubmit = (values: Users) => {
-    dispatch(registerUser(values));
-    reset();
-    navigate(Routes.AddEmployee);
+  const onSubmit = async (values: Users) => {
+    try {
+      const resultAction = await dispatch(registerUser(values));
+      unwrapResult(resultAction);
+      reset();
+      navigate(Routes.Home);
+    } catch (err) {
+      console.error('error', err);
+    }
   };
 
   return (
-    <CustomPaper className=" h-full flex flex-col justify-center">
+    <CustomPaper className="h-full flex flex-col justify-center items-center">
       <Typography variant="h4" className="text-center p-3">
-        Регистрация
+        {t('register.title')}
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container spacing={2}>
@@ -32,11 +40,11 @@ export const Register = () => {
               name="userName"
               control={control}
               defaultValue=""
-              rules={{ required: 'Это обязательное поле' }}
+              rules={{ required: t('register.requiredField') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="UserName"
+                  label={t('register.userNameLabel')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -50,11 +58,11 @@ export const Register = () => {
               name="email"
               control={control}
               defaultValue=""
-              rules={{ required: 'Это обязательное поле' }}
+              rules={{ required: t('register.requiredField') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Email"
+                  label={t('register.emailLabel')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -69,11 +77,11 @@ export const Register = () => {
               name="password"
               control={control}
               defaultValue=""
-              rules={{ required: 'Это обязательное поле' }}
+              rules={{ required: t('register.requiredField') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Пароль"
+                  label={t('register.passwordLabel')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -85,10 +93,10 @@ export const Register = () => {
           </Grid>
           <Grid item xs={12} className="flex justify-center gap-5">
             <Button variant="contained" color="primary" type="submit">
-              Зарегистрироваться
+              {t('register.submitButton')}
             </Button>
             <Button variant="contained" color="primary">
-              <Link to={Routes.Login}>Логин</Link>
+              <Link to={Routes.Login}>{t('register.loginButton')}</Link>
             </Button>
           </Grid>
         </Grid>

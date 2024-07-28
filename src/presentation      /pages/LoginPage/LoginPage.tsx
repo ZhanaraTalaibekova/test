@@ -1,16 +1,19 @@
 import { Button, Grid, TextField, Typography } from '@mui/material';
-import { Controller, SubmitHandler, useForm } from 'react-hook-form';
-import { CustomPaper } from '../../components            ';
+import { Controller, useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { AppDispatch, loginUser } from '../../../redux';
 import { useNavigate } from 'react-router';
 import { Routes } from '../../enums/router';
 import { Link } from 'react-router-dom';
 import { Users } from '../../../data';
+import { useTranslation } from 'react-i18next';
+import { CustomPaper } from '../../components            ';
+
 
 export const Login = () => {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { control, handleSubmit, reset } = useForm<Users>();
 
@@ -21,22 +24,28 @@ export const Login = () => {
   };
 
   return (
-    <CustomPaper className=" h-full flex flex-col justify-center">
-      <Typography variant="h4" className="text-center p-3">
-        Логин
+    <CustomPaper className="h-full flex flex-col justify-center items-center p-5">
+      <Typography variant="h4" className="text-center mb-4">
+        {t('login.title')}
       </Typography>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md">
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12}>
+          <Grid item xs={12}>
             <Controller
               name="email"
               control={control}
               defaultValue=""
-              rules={{ required: 'Это обязательное поле' }}
+              rules={{
+                required: t('login.requiredField'),
+                pattern: {
+                  value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                  message: t('login.invalidEmail'),
+                },
+              }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Email"
+                  label={t('login.emailLabel')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -46,16 +55,22 @@ export const Login = () => {
               )}
             />
           </Grid>
-          <Grid item xs={12} sm={12}>
+          <Grid item xs={12}>
             <Controller
               name="password"
               control={control}
               defaultValue=""
-              rules={{ required: 'Это обязательное поле' }}
+              rules={{
+                required: t('login.requiredField'),
+                minLength: {
+                  value: 6,
+                  message: t('login.passwordMinLength'),
+                },
+              }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Пароль"
+                  label={t('login.passwordLabel')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -65,12 +80,12 @@ export const Login = () => {
               )}
             />
           </Grid>
-          <Grid item xs={12} className="flex justify-center gap-5">
-            <Button variant="contained" color="primary">
-              <Link to={Routes.Register}>Назад</Link>
+          <Grid item xs={12} className="flex justify-center gap-5 mt-4">
+            <Button variant="contained" color="primary" onClick={() => navigate(Routes.Register)}>
+              {t('login.backButton')}
             </Button>
             <Button variant="contained" color="primary" type="submit">
-              Войти
+              {t('login.submitButton')}
             </Button>
           </Grid>
         </Grid>

@@ -5,10 +5,10 @@ import { useNavigate } from "react-router";
 import { Employees } from "../../../data";
 import { addEmployeePosition, AppDispatch, createEmployee } from "../../../redux";
 import { useDispatch } from "react-redux";
-import axios from "axios";
-
+import { useTranslation } from "react-i18next";
 
 export const NewEmployee = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch<AppDispatch>();
   const { control, handleSubmit, reset } = useForm<Employees>({
     mode: 'onChange',
@@ -40,7 +40,7 @@ export const NewEmployee = () => {
 
   return (
     <CustomPaper>
-      <Typography variant="h4">Новый сотрудник</Typography>
+      <Typography variant="h4">{t('newEmployee.title')}</Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12}>
@@ -48,11 +48,11 @@ export const NewEmployee = () => {
               name="firstName"
               control={control}
               defaultValue=""
-              rules={{ required: 'Имя обязательно' }}
+              rules={{ required: t('newEmployee.firstNameRequired') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Имя"
+                  label={t('newEmployee.firstName')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -66,11 +66,11 @@ export const NewEmployee = () => {
               name="lastName"
               control={control}
               defaultValue=""
-              rules={{ required: 'Фамилия обязательна' }}
+              rules={{ required: t('newEmployee.lastNameRequired') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Фамилия"
+                  label={t('newEmployee.lastName')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -84,11 +84,11 @@ export const NewEmployee = () => {
               name="phoneNumber"
               control={control}
               defaultValue=""
-              rules={{ required: 'Номер обязателен' }}
+              rules={{ required: t('newEmployee.phoneNumberRequired') }}
               render={({ field, fieldState: { error } }) => (
                 <TextField
                   {...field}
-                  label="Номер телефона"
+                  label={t('newEmployee.phoneNumber')}
                   variant="outlined"
                   fullWidth
                   error={!!error}
@@ -99,7 +99,7 @@ export const NewEmployee = () => {
           </Grid>
           <Grid item xs={12} sm={12}>
             <FormControl component="fieldset">
-              <FormLabel component="legend">Должность</FormLabel>
+              <FormLabel component="legend">{t('newEmployee.positions')}</FormLabel>
               <FormGroup>
                 <Controller
                   name="positions.dressmaker"
@@ -130,13 +130,13 @@ export const NewEmployee = () => {
           </Grid>
           <Grid item xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="team-label">Объединить в бригаду</InputLabel>
+              <InputLabel id="team-label">{t('newEmployee.team')}</InputLabel>
               <Controller
                 name="team"
                 control={control}
                 // defaultValue="нет"
                 render={({ field }) => (
-                  <Select {...field} labelId="team-label" label="Объединить в бригаду">
+                  <Select {...field} labelId="team-label" label={t('newEmployee.team')}>
                     <MenuItem value="true">Да</MenuItem>
                     <MenuItem value="false">Нет</MenuItem>
                   </Select>
@@ -149,12 +149,12 @@ export const NewEmployee = () => {
               name="userImage"
               control={control}
               defaultValue=""
-              render={({ field }) => <TextField {...field} label="URL изображения" variant="outlined" fullWidth />}
+              render={({ field }) => <TextField {...field} label={t('newEmployee.imageURL')} variant="outlined" fullWidth />}
             />
           </Grid>
           <Grid item xs={12}>
             <Button variant="contained" color="primary" type="submit" fullWidth>
-              Отправить
+              {t('newEmployee.submit')}
             </Button>
           </Grid>
         </Grid>
