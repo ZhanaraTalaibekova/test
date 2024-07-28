@@ -3,8 +3,9 @@ import { CustomPaper } from "../CustomPaper";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import { Employees } from "../../../data";
-import { AppDispatch, createEmployee } from "../../../redux";
+import { addEmployeePosition, AppDispatch, createEmployee } from "../../../redux";
 import { useDispatch } from "react-redux";
+import axios from "axios";
 
 
 export const NewEmployee = () => {
@@ -30,8 +31,8 @@ export const NewEmployee = () => {
   const onSubmit: SubmitHandler<Employees> = async (data) => {
     try {
       await dispatch(createEmployee(data)).unwrap();
+      await dispatch(addEmployeePosition(data)).unwrap();
       reset();
-      // navigate('/');
     } catch (error) {
       console.error('Ошибка при создании сотрудника:', error);
     }

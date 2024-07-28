@@ -1,0 +1,22 @@
+.root {
+  padding: 24px;
+}
+
+.list {
+  padding: 16px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  margin-right: 8px;
+}
+
+.searchField {
+  margin-bottom: 16px;
+}

@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { createEmployee, getEmployees } from "../actions";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { addEmployeePosition, createEmployee, getEmployees } from "../actions";
 import { Employees, Status } from "../../data";
 
 interface EmployeeState {
@@ -15,7 +15,7 @@ const initialState: EmployeeState = {
 }
 
 export const employeesSlice = createSlice({
-    name: 'employees',
+    name: 'employeesPositions',
     initialState,
     reducers: {},
     extraReducers: (builder) => {
@@ -41,7 +41,7 @@ export const employeesSlice = createSlice({
             .addCase(createEmployee.rejected, (state, action) => {
                 state.status = Status.FAILED;
                 state.error = action.payload || 'Unknown error';
-            });
+            })
     },
 });
 

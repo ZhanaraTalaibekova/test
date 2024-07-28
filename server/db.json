@@ -1,69 +1,61 @@
 {
   "employees": [
     {
-      "firstName": "fv",
-      "lastName": "f",
-      "phoneNumber": "+996 703010039",
+      "firstName": "fdf",
+      "lastName": "dfdf",
+      "phoneNumber": "334",
       "positions": {
-        "dressmaker": true,
-        "cutter": true,
-        "technologist": false
+        "dressmaker": false,
+        "cutter": false,
+        "technologist": true
       },
-      "team": "false",
+      "team": false,
       "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
       "id": 1
     },
     {
-      "firstName": "са",
-      "lastName": "srefsrf",
-      "phoneNumber": "+996 703010039",
-      "positions": {
-        "dressmaker": false,
-        "cutter": true,
-        "technologist": true
-      },
-      "team": false,
-      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 2
-    },
-    {
-      "firstName": "ffv",
-      "lastName": "fvsfvs",
-      "phoneNumber": "+996 703010039",
+      "firstName": "fsrf",
+      "lastName": "grtg",
+      "phoneNumber": "grtg",
       "positions": {
         "dressmaker": true,
-        "cutter": true,
+        "cutter": false,
         "technologist": false
       },
       "team": "true",
       "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 3
-    },
-    {
-      "firstName": "wevcefr",
-      "lastName": "fcvf",
-      "phoneNumber": "343434343",
-      "positions": {
-        "dressmaker": false,
-        "cutter": true,
-        "technologist": false
-      },
-      "team": false,
-      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 4
-    },
-    {
-      "firstName": "ацукацук",
-      "lastName": "ауау",
-      "phoneNumber": "4545458787458745",
-      "positions": {
-        "dressmaker": false,
-        "cutter": true,
-        "technologist": true
-      },
-      "team": false,
-      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
-      "id": 5
+      "id": 2
     }
-  ]
+  ],
+  "employeesPositions": {
+    "technologists": [
+      {
+        "firstName": "fdf",
+        "lastName": "dfdf",
+        "phoneNumber": "334",
+        "positions": {
+          "dressmaker": false,
+          "cutter": false,
+          "technologist": true
+        },
+        "team": false,
+        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+      }
+    ],
+    "dressmakers": [
+      {
+        "firstName": "fsrf",
+        "lastName": "grtg",
+        "phoneNumber": "grtg",
+        "positions": {
+          "dressmaker": true,
+          "cutter": false,
+          "technologist": false
+        },
+        "team": "true",
+        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+      }
+    ],
+    "cutters": []
+  }
 }
