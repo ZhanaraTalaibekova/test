@@ -1,0 +1,16 @@
+.header {
+  padding: 65px 0 30px 46px;
+  display: flex;
+  column-gap: 24px;
+
+  a {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    line-height: 19.36px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  a:hover {
+    color: #4B46E0;
+  }
+}
