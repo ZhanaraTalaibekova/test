@@ -46,27 +46,15 @@ export const Header = () => {
                   <MenuItem value="en">EN</MenuItem>
                   <MenuItem value="ru">RU</MenuItem>
                 </Select>
-                {token ? (
-                  <Button
-                    className={styles['logout-button']}
-                    variant="contained"
-                    sx={{ minWidth: 120 }}
-                    color="secondary"
-                    onClick={logOut}
-                  >
-                    {t('navigation.logout')}
-                  </Button>
-                ) : (
-                  <Button
-                    className={styles['register-button']}
-                    variant="contained"
-                    sx={{ minWidth: 120 }}
-                    color="primary"
-                    onClick={handleRegister}
-                  >
-                    {t('navigation.register')}
-                  </Button>
-                )}
+                <Button
+                  className={styles['logout-button']}
+                  variant="contained"
+                  sx={{ minWidth: 120 }}
+                  color="primary"
+                  onClick={logOut}
+                >
+                  {t('navigation.logout')}
+                </Button>
               </Grid>
             </Grid>
           </header>

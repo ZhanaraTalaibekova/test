@@ -15,7 +15,7 @@ export default [
     languageOptions: {
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        ecmaVersion: 'latest',
+        ecmaVersion: 2020,
         sourceType: 'module',
         ecmaFeatures: {
           jsx: true,
@@ -92,7 +92,7 @@ export default [
           groups: [
             ['^react'],
             ['^@mui', '^material-ui'],
-            ['^react-hook-form', '^@hookform/resolvers/zod', '^zod'],
+            ['^react-hook-form', '^@hookform/resolvers/zod'],
             ['^@?\\w'],
             ['@/(.*)'],
             ['^[./]'],

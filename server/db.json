@@ -43,16 +43,16 @@
   "employeesPositions": {
     "technologists": [
       {
-        "firstName": "fg",
-        "lastName": "fg",
-        "phoneNumber": "34",
+        "firstName": "f",
+        "lastName": "d",
+        "phoneNumber": "123456",
         "positions": {
           "dressmaker": false,
           "cutter": false,
           "technologist": true
         },
-        "team": "true",
-        "userImage": "https://i.pinimg.com/564x/0a/25/e3/0a25e3e8a04b4c105b8814d98c2f9228.jpg"
+        "team": false,
+        "userImage": ""
       }
     ],
     "dressmakers": [
@@ -102,6 +102,18 @@
       "password": "$2a$10$ollRPrNbzSIyVKwC.G4Ab.fLCU0kYNpq7aqH0RWHZS1TuBnbMOPa2",
       "userName": "r",
       "id": 3
+    },
+    {
+      "email": "sdf@gmail.com",
+      "password": "$2a$10$A6mx/tPUqZQJ4ug5mE6Uj.cfViJ1ni6V1RH.BPciK.o4nrDKcMGiC",
+      "userName": "ertyui",
+      "id": 4
+    },
+    {
+      "email": "qwerty19@gmail.com",
+      "password": "$2a$10$UVeLOZQBBfgNoyCQVhiTbOPJm9UyUIgHP29AQO83cdPP4c8HABpCC",
+      "userName": "qwerty19",
+      "id": 5
     }
   ]
 }
