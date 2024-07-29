@@ -66,14 +66,14 @@ export const EmployeeList: React.FC = () => {
     navigate(route);
   };
 
-  const renderEmployeeSection = (employees: any[], title: string, positionKey: string) => {
+  const renderEmployeeSection = (employees: Employees[], title: string, positionKey: string) => {
     return (
       <div className={styles.section}>
         <div className={styles.employeesAvatar}>
           {employees.slice(0, 2).map((employee, index) => (
             <ListItem key={index} className={styles.listItem}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <Avatar className={styles.avatar} src={employee.userImage || ''} />
+                <Avatar className={styles.avatar} src={typeof employee.userImage === 'string' ? employee.userImage : ''} />
               </div>
             </ListItem>
           ))}
@@ -139,9 +139,9 @@ export const EmployeeList: React.FC = () => {
         />
       </Box>
       <div className={styles.wrapper}>
-        {renderEmployeeSection(filteredTechnologists, t('technologists'), 'technologist')}
-        {renderEmployeeSection(filteredDressmakers, t('dressmakers'), 'dressmaker')}
-        {renderEmployeeSection(filteredCutters, t('cutters'), 'cutter')}
+        {filteredTechnologists.length > 0 && renderEmployeeSection(filteredTechnologists, t('technologists'), 'technologist')}
+        {filteredDressmakers.length > 0 && renderEmployeeSection(filteredDressmakers, t('dressmakers'), 'dressmaker')}
+        {filteredCutters.length > 0 && renderEmployeeSection(filteredCutters, t('cutters'), 'cutter')}
       </div>
     </CustomPaper>
   );

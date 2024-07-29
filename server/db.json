@@ -1,108 +1,43 @@
 {
   "employees": [
     {
-      "firstName": "fdf",
-      "lastName": "dfdf",
-      "phoneNumber": "334",
+      "firstName": "alina",
+      "lastName": "alina",
+      "phoneNumber": "1234",
       "positions": {
-        "dressmaker": false,
+        "dressmaker": true,
         "cutter": false,
-        "technologist": true
+        "technologist": false
       },
       "team": false,
-      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
+      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
       "id": 1
     },
     {
-      "firstName": "b",
-      "lastName": "b",
-      "phoneNumber": "545",
+      "firstName": "madina",
+      "lastName": "madina",
+      "phoneNumber": "12345t",
       "positions": {
         "dressmaker": false,
         "cutter": true,
-        "technologist": false
-      },
-      "team": "true",
-      "userImage": "https://i.pinimg.com/564x/08/ee/71/08ee7156e3260bcf04b93ed8e3687288.jpg",
-      "id": 6
-    },
-    {
-      "firstName": "v",
-      "lastName": "v",
-      "phoneNumber": "3",
-      "positions": {
-        "dressmaker": false,
-        "cutter": false,
-        "technologist": true
-      },
-      "team": "true",
-      "userImage": "https://i.pinimg.com/564x/bb/2f/65/bb2f658691cc2d0e7728c733c3066408.jpg",
-      "id": 7
-    },
-    {
-      "firstName": "сс",
-      "lastName": "сс",
-      "phoneNumber": "сс",
-      "positions": {
-        "dressmaker": false,
-        "cutter": true,
-        "technologist": false
-      },
-      "team": "false",
-      "userImage": "https://i.pinimg.com/564x/e0/b7/87/e0b78721a0aae8a186010d5909b73bbd.jpg",
-      "id": 8
-    },
-    {
-      "positions": {
-        "dressmaker": false,
-        "cutter": true,
-        "technologist": false
-      },
-      "firstName": "ff",
-      "lastName": "fff",
-      "phoneNumber": "434434",
-      "team": false,
-      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
-      "id": 13
-    },
-    {
-      "firstName": "fdfd",
-      "lastName": "dfdf",
-      "phoneNumber": "+996 703010039",
-      "positions": {
-        "dressmaker": true,
-        "cutter": false,
         "technologist": false
       },
       "team": false,
       "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 14
-    },
-    {
-      "firstName": "ff",
-      "lastName": "ff",
-      "phoneNumber": "34344",
-      "positions": {
-        "dressmaker": true,
-        "cutter": false,
-        "technologist": false
-      },
-      "team": false,
-      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
-      "id": 15
+      "id": 2
     },
     {
       "firstName": "sezim",
       "lastName": "sezim",
-      "phoneNumber": "123456789765",
+      "phoneNumber": "+996 703010039",
       "positions": {
         "dressmaker": true,
-        "cutter": false,
+        "cutter": true,
         "technologist": false
       },
       "team": false,
       "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
-      "id": 16
+      "id": 3
     }
   ],
   "employeesPositions": {
@@ -124,10 +59,10 @@
       {
         "firstName": "sezim",
         "lastName": "sezim",
-        "phoneNumber": "123456789765",
+        "phoneNumber": "+996 703010039",
         "positions": {
           "dressmaker": true,
-          "cutter": false,
+          "cutter": true,
           "technologist": false
         },
         "team": false,
@@ -136,11 +71,11 @@
     ],
     "cutters": [
       {
-        "firstName": "wsdefrgthj",
-        "lastName": "qwehyj",
-        "phoneNumber": "1234567",
+        "firstName": "sezim",
+        "lastName": "sezim",
+        "phoneNumber": "+996 703010039",
         "positions": {
-          "dressmaker": false,
+          "dressmaker": true,
           "cutter": true,
           "technologist": false
         },
@@ -167,126 +102,6 @@
       "password": "$2a$10$ollRPrNbzSIyVKwC.G4Ab.fLCU0kYNpq7aqH0RWHZS1TuBnbMOPa2",
       "userName": "r",
       "id": 3
-    },
-    {
-      "email": "m@gmail.com",
-      "password": "$2a$10$DdyyjRNouQytBESEPUTa0Ok6EANtup7WjF5B1TN7hJwLTxB29Lhnm",
-      "userName": "m",
-      "id": 4
-    },
-    {
-      "email": "t@gmail.com",
-      "password": "$2a$10$0vRZbmxzsYpMQL37EG3Wz.HEFv.Euyh2b0YlyESlJE5jtxnXxsCdG",
-      "userName": "t",
-      "id": 5
-    },
-    {
-      "email": "dd2@gmail.com",
-      "password": "$2a$10$gUcHdgE1kECwY3Rui48XKuUAqZRXhWPOkzi1s80cZzK2r.p0K166m",
-      "userName": "fv",
-      "id": 6
-    },
-    {
-      "email": "zjdckls@gmail.com",
-      "password": "$2a$10$kse3QeS5x7sWLVAs7b7YoO0ZGlKkGkoiSjR1uKNqAB.T3OIERdAFK",
-      "userName": "ff",
-      "id": 7
-    },
-    {
-      "email": "zhanara@gmail.com",
-      "password": "$2a$10$.QE3dw2g/NUq/DBXYiTus.CMXdiYGmyCnB7zGyFtVTKiD5op3nkJa",
-      "userName": "34343",
-      "id": 8
-    },
-    {
-      "email": "dd45542@gmail.com",
-      "password": "$2a$10$llsDS9P.PmjStazFHpwwZuagEppX6A5OuWJoKquCHndg0mYfK8fFi",
-      "userName": "rbtbr",
-      "id": 9
-    },
-    {
-      "email": "vlmsdlkfcv@cm.com",
-      "password": "$2a$10$W0CyrNO.J/HJ56x98BX1LuJpCfOCFvFhQbFlW21rZX7fJiE6BjJ4e",
-      "userName": "ed23e2",
-      "id": 10
-    },
-    {
-      "email": "dvzm@d.com",
-      "password": "$2a$10$UxoR.OA9RbdROuknLZHleu6ncI5UtpXtD.5FgvfQV/h7zY86jO./.",
-      "userName": "rrfr",
-      "id": 11
-    },
-    {
-      "email": "dchbj@gmail.com",
-      "password": "$2a$10$4NJnQ0n9K/3SelPiXxbXzeOc4J6.gam83SooUD9pJplRSRqgwrif2",
-      "userName": "dffddf",
-      "id": 12
-    },
-    {
-      "email": "eaae@gmail.com",
-      "password": "$2a$10$.qy3f6ArwSscTGN3.kCZZeqGcdyvHHFFa0M7wU7o3mlguseMuZas2",
-      "userName": "ferf",
-      "id": 13
-    },
-    {
-      "email": "u@gmail.com",
-      "password": "$2a$10$8xHmNkWSh/3SxWyzamC/ZuqDClPd2YAWjYP3Oa298esEcum9wdQkm",
-      "userName": "r",
-      "id": 14
-    },
-    {
-      "email": "f@fmail.com",
-      "password": "$2a$10$weNQjf50SInE6XnKPrnaV.9IfxDqW2JtCOb/fhrPF04bS7E.WJgkO",
-      "userName": "l",
-      "id": 15
-    },
-    {
-      "email": "lmkkm@gmail.com",
-      "password": "$2a$10$qDZ4uLlCEXN3C9pyatPCw.mhYDyGPj4fEyQpA1ezQfumqerJ1Y2fK",
-      "userName": "kmlk",
-      "id": 16
-    },
-    {
-      "email": "ds@gmail.com",
-      "password": "$2a$10$/XeLEdANAitbZDFRnPWr5O3kMg0jK3ZsSM2hv0zDorn7.vmeESwLK",
-      "userName": "mmk",
-      "id": 17
-    },
-    {
-      "email": "bvhgv@gmail.com",
-      "password": "$2a$10$iaJAIVTT4mdR5E2vD3cLOueKpuO10EPy3ENh9PlEWzqPCWiMs6yza",
-      "userName": "mlmm",
-      "id": 18
-    },
-    {
-      "email": "dvdsn@gmail.com",
-      "password": "$2a$10$IpHEoDVNHMhFmtRjzJMztu593TemevK2L/fltNeEguLAefKEYFOTi",
-      "userName": "ferfernj",
-      "id": 19
-    },
-    {
-      "email": "fegrth@gmail.com",
-      "password": "$2a$10$ARm8Yw.bMGxUAFDphqzNzOyKQbEiHKJaoBTQHZgT7psR82fQMCOCy",
-      "userName": "sdfghjk",
-      "id": 20
-    },
-    {
-      "email": "f@gmail.com",
-      "password": "$2a$10$h2mk5SDGLgy0tP8aK4buVOErfCy8JFFQBeOH1cJONXz1xNNLs9QPS",
-      "userName": "f",
-      "id": 21
-    },
-    {
-      "email": "kjscnkdj@gmail.com",
-      "password": "$2a$10$p189JKjkcUStD8UYvLNgIeYb05ubT2nc/3g9PmIeWf8Ure72ajn2C",
-      "userName": "lvms",
-      "id": 22
-    },
-    {
-      "email": "fe@gmail.com",
-      "password": "$2a$10$HmNdL1MS2aqZqFAmygUMKONhuokepnT7FLfxJd3Qxqc8UadVFDC5u",
-      "userName": "efef",
-      "id": 23
     }
   ]
 }
