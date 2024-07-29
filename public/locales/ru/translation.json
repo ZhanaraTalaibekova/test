@@ -65,5 +65,11 @@
     "login": "Логин",
     "register": "Регистрация",
     "addEmployee": "Добавить сотрудника"
-  }
+  },
+  "allEmployees": "Все сотрудники",
+  "search": "Поиск",
+  "searchEmployee": "Поиск сотрудника",
+  "technologists": "Технологи",
+  "dressmakers": "Швеи",
+  "cutters": "Раскройщики"
 }

@@ -26,13 +26,22 @@ export const NewEmployee = () => {
     },
   });
 
-  const navigate = useNavigate();
-
   const onSubmit: SubmitHandler<Employees> = async (data) => {
     try {
       await dispatch(createEmployee(data)).unwrap();
       await dispatch(addEmployeePosition(data)).unwrap();
-      reset();
+      reset({
+        firstName: '',
+        lastName: '',
+        phoneNumber: '',
+        positions: {
+          dressmaker: false,
+          cutter: false,
+          technologist: false,
+        },
+        team: false,
+        userImage: '',
+      });
     } catch (error) {
       console.error('Ошибка при создании сотрудника:', error);
     }
@@ -40,7 +49,7 @@ export const NewEmployee = () => {
 
   return (
     <CustomPaper>
-      <Typography variant="h4">{t('newEmployee.title')}</Typography>
+      <Typography sx={{ paddingBottom: '20px' }} variant="h4">{t('newEmployee.title')}</Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12}>
@@ -106,7 +115,7 @@ export const NewEmployee = () => {
                   control={control}
                   defaultValue={false}
                   render={({ field }) => (
-                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label="Швея" />
+                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label={t('newEmployee.dressmaker')} />
                   )}
                 />
                 <Controller
@@ -114,7 +123,7 @@ export const NewEmployee = () => {
                   control={control}
                   defaultValue={false}
                   render={({ field }) => (
-                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label="Раскройщик" />
+                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label={t('newEmployee.cutter')} />
                   )}
                 />
                 <Controller
@@ -122,7 +131,7 @@ export const NewEmployee = () => {
                   control={control}
                   defaultValue={false}
                   render={({ field }) => (
-                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label="Технолог" />
+                    <FormControlLabel control={<Checkbox {...field} color="primary" />} label={t('newEmployee.technologist')} />
                   )}
                 />
               </FormGroup>
@@ -134,7 +143,6 @@ export const NewEmployee = () => {
               <Controller
                 name="team"
                 control={control}
-                // defaultValue="нет"
                 render={({ field }) => (
                   <Select {...field} labelId="team-label" label={t('newEmployee.team')}>
                     <MenuItem value="true">Да</MenuItem>

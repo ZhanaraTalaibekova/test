@@ -1,6 +1,6 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { addEmployeePosition, createEmployee, getEmployees, getEmployeesPositions } from "../actions";
-import { Employees, EmployeesPositions, Status } from "../../data";
+import { createSlice } from "@reduxjs/toolkit";
+import { addEmployeePosition, getEmployeesPositions } from "../actions";
+import { EmployeesPositions, Status } from "../../data";
 
 interface EmployeeState {
   data: EmployeesPositions[];

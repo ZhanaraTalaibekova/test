@@ -5,7 +5,6 @@ import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -17,6 +16,8 @@ import { useState } from 'react';
 import { LogoIcon, ProgressIcon, ShirtIcon, UserIcon, WalletIcon } from '../Icons';
 import { Link } from 'react-router-dom';
 import { Routes } from '../../enums/router';
+import { Header } from '../Header';
+import { Outlet } from "react-router";
 
 const drawerWidth = 240;
 
@@ -65,7 +66,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'flex-end',
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -132,8 +132,7 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 
 const icons = [<ProgressIcon />, <WalletIcon />, <ShirtIcon />, <UserIcon />];
 
-
-export const MiniDrawer = () => {
+export const MiniDrawer = ({ children }: { children: React.ReactNode }) => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 
@@ -182,28 +181,33 @@ export const MiniDrawer = () => {
             }}>
             {['Progress', 'Price', 'Portfolio', 'Employees'].map((text, index) => (
               <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-                <ListItemButton
-                  sx={{
-                    minHeight: 48,
-                    justifyContent: 'center',
-                    px: 2.5,
-                  }}
-                >
-                  <ListItemIcon
+                <Link to={Routes.InDev} key={text} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <ListItemButton
                     sx={{
-                      display: 'flex',
+                      minHeight: 48,
                       justifyContent: 'center',
+                      px: 2.5,
                     }}
                   >
-                    <Link to={Routes.InDev}>{icons[index]}</Link>
-                  </ListItemIcon>
-                  <ListItemText primary={text} sx={{ display: open ? 'block' : 'none' }} />
-                </ListItemButton>
+                    <ListItemIcon
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Link to={Routes.InDev}>{icons[index]}</Link>
+                    </ListItemIcon>
+                    <ListItemText primary={text} sx={{ display: open ? 'block' : 'none' }} />
+                  </ListItemButton>
+                </Link>
               </ListItem>
             ))}
           </Box>
         </List>
       </Drawer>
+      <Box component="main" sx={{ flexGrow: 1 }}>
+        {children}
+      </Box>
     </Box>
   );
-}
+};

@@ -2,13 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import { createEmployee, deleteEmployee, getEmployees } from "../actions";
 import { Employees, Status } from "../../data";
 
-interface EmployeeState {
+interface EmployeePositionsState {
     data: Employees[];
     status: Status;
     error: string | null;
 }
 
-const initialState: EmployeeState = {
+const initialState: EmployeePositionsState = {
     data: [],
     status: Status.LOADING,
     error: null,

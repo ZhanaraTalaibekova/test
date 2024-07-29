@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../redux/store";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { deleteEmployee, getEmployees } from "../../../redux";
 import { Card, CardContent, CardMedia, Grid, IconButton, Typography } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';

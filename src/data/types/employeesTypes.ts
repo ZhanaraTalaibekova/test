@@ -25,12 +25,3 @@ export interface EmployeesPositions {
   dressmakers: Employees[];
   technologists: Employees[];
 }
-
-// {
-//   "employees": [],
-//   "employeesPositions": {
-//     "technologists": [],
-//     "dressmakers": [],
-//     "cutters": []
-//   }
-// }

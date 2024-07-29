@@ -65,5 +65,11 @@
     "login": "Login",
     "register": "Register",
     "addEmployee": "Add Employee"
-  }
+  },
+  "allEmployees": "All Employees",
+  "search": "Search",
+  "searchEmployee": "Search Employee",
+  "technologists": "Technologists",
+  "dressmakers": "Dressmakers",
+  "cutters": "Cutters"
 }

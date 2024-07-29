@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Routes } from '../enums/router';
 import { Layout, PrivateRoute } from '../shared';
-import { AddEmployeePage, HomePage, InDev, Login, Register } from '../pages';
+import { AddEmployeePage, EmployeesPage, HomePage, InDev, Login, Register } from '../pages';
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +24,10 @@ export const router = createBrowserRouter([
             <AddEmployeePage />
           </PrivateRoute>
         ),
+      },
+      {
+        path: Routes.Employees,
+        element: <EmployeesPage />,
       },
       {
         path: Routes.InDev,
